@@ -1,11 +1,11 @@
-import React,{useState} from "react";
+import React from "react";
 
 export default function PersonDetail() {
   
   
   return (
     <div>
-      <div className="grid xl:grid-cols-2 xl:gap-6">
+      <div className="grid xl:grid-cols-2 xl:gap-6 mt-2">
         <div className="relative z-0 mb-6 w-full group">
           <input
             type={"text"}
@@ -197,7 +197,7 @@ export default function PersonDetail() {
       <textarea
         id="chief_complain"
         rows="4"
-        className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border outline-none border-gray-300  focus:border-primary_text "
       ></textarea>
 
       <div className="flex justify-start">
@@ -209,7 +209,7 @@ export default function PersonDetail() {
             Co-existing Disease
           </label>
           <input
-            className="form-control block w-full px-2 py-1 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+            className="form-control block w-full px-2 py-1 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-primary_text focus:outline-none"
             type="file"
             id="formFileMultiple1"
           />
@@ -225,7 +225,7 @@ export default function PersonDetail() {
             Drugs Currently Consuming
           </label>
           <input
-            className="form-control block w-full px-2 py-1 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+            className="form-control block w-full px-2 py-1 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-primary_text focus:outline-none"
             type="file"
             id="formFile2"
           />
@@ -241,7 +241,7 @@ export default function PersonDetail() {
             Drugs Allergies
           </label>
           <input
-            className="form-control block w-full px-2 py-1 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+            className="form-control block w-full px-2 py-1 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-primary_text focus:outline-none"
             type="file"
             id="formFile3"
           />
@@ -257,7 +257,7 @@ export default function PersonDetail() {
             Instructions from Doctor
           </label>
           <input
-            className="form-control block w-full px-2 py-1 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+            className="form-control block w-full px-2 py-1 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-primary_text focus:outline-none"
             type="file"
             id="formFile4"
           />
@@ -274,13 +274,13 @@ export default function PersonDetail() {
             Test reports
           </label>
           <input
-            className="form-control block w-min px-2 py-1 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+            className="form-control block w-min px-2 py-1 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-primary_text focus:outline-none"
             type="file"
             id="formFile5"
           />
         </div>
         <div className="mt-3">
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 my-6 py-1 rounded">
+          <button className="bg-primary_text  text-white font-bold px-4 my-6 py-1 rounded">
             Add
           </button>
         </div>

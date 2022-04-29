@@ -12,7 +12,7 @@ export default function ConsentAndPayment() {
             Consent to be treated
           </label>
           <input
-            className="form-control block w-full px-2 py-1 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+            className="form-control block w-full px-2 py-1 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-primary_text focus:outline-none"
             type="file"
             id="formFile6"
           />
@@ -27,7 +27,7 @@ export default function ConsentAndPayment() {
             Consent for Insaurance
           </label>
           <input
-            className="form-control block w-full px-2 py-1 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+            className="form-control block w-full px-2 py-1 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-primary_text focus:outline-none"
             type="file"
             id="formFile7"
           />
@@ -37,7 +37,7 @@ export default function ConsentAndPayment() {
       <hr className="my-3" />
       <label
         htmlFor="Payment"
-        className="form-label inline-block mb-2 text-gray-900 text-sm font-medium"
+        className="form-label inline-block mb-6 text-gray-900 text-sm font-medium"
       >
         Payment Details
       </label>
@@ -120,22 +120,37 @@ export default function ConsentAndPayment() {
           </label>
         </div>
       </div>
-      <label
-        htmlFor="payMode"
-        className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-400"
-      >
-        Payment Mode
-      </label>
-      <select
-        defaultValue={"Card"}
-        id="payMode"
-        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-      >
-        <option value={"Card"}>Credit/Debit</option>
-        <option value={"Bank Transfer"}>Bank Transfer</option>
-        <option value={"E-wallet"}>E-wallet</option>
-        <option value={"Cash"}>Cash</option>
-      </select>
+    
+
+      <div className=" mb-6 flex-auto  w-96">
+          <label
+            className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            htmlFor="payMode"
+          >
+           Payment Mode
+          </label>
+          <div className="relative">
+            <select
+              defaultValue={"Card"}
+              className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-primary_text"
+              id="payMode"
+            >
+              <option value={"Card"} >Credit/Debit</option>
+              <option value={"Bank Transfer"} >Bank Transfer</option>
+              <option value={"E-wallet"} >E-wallet</option>
+              <option value={"Cash"} >Cash</option>
+            </select>
+            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+              <svg
+                className="fill-current h-4 w-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+              >
+                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+              </svg>
+            </div>
+          </div>
+        </div>
 
       <div className="relative z-0 mb-6 w-full group mt-4">
         <input
@@ -149,7 +164,7 @@ export default function ConsentAndPayment() {
           htmlFor="floating_payment_mode"
           className="form-label-effect"
         >
-          Payment Mode Details
+          Payment Mode Note
         </label>
       </div>
 

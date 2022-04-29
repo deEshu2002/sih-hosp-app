@@ -11,6 +11,7 @@ import Help from './Components/FrontPage/Help';
 import TAndC from './Components/FrontPage/TAndC';
 import PrivAndPol from './Components/FrontPage/PrivAndPol';
 import OperatorNav from './Components/OperatorScreen';
+import HospForm from "./Components/OperatorComponent/Hosp/HospForm";
 
 
 
@@ -19,17 +20,18 @@ function App() {
     <div className="App">
      <Routes>
        <Route path="/" index element={<FrontPage/>}/>
-       <Route path="features" element={<Features/>}/>
-       <Route path="volunteer" element={<Volunteer/>}/>
-       <Route path="about" element={<About/>}/>
-       <Route path="contact" element={<Contacts/>}/>
-       <Route path="signIn" element={<SignIn/>}/>
-       <Route path="nodeSignIn" element={<NodeSignIn/>}/>
-       <Route path="joinForm" element={<JoinForm/>}/>
+       <Route path="/features" element={<Features/>}/>
+       <Route path="/volunteer" element={<Volunteer/>}/>
+       <Route path="/about" element={<About/>}/>
+       <Route path="/contact" element={<Contacts/>}/>
+       <Route path="/signIn" element={<SignIn/>}/>
+       <Route path="/nodeSignIn" element={<NodeSignIn/>}/>
+       <Route path="/joinForm" element={<JoinForm/>}/>
        <Route path="/:uniqueID/dashboard" element={<OperatorNav/>}/>
-       <Route path="help" element={<Help/>}/>
-       <Route path="tAndC" element={<TAndC/>}/>
-       <Route path="privAndPol" element={<PrivAndPol/>}/>
+       <Route path="/:uniqueID/:NodeId/form" element={<HospForm/>}/>
+       <Route path="/help" element={<Help/>}/>
+       <Route path="/tAndC" element={<TAndC/>}/>
+       <Route path="/privAndPol" element={<PrivAndPol/>}/>
      </Routes>
     </div>
   );

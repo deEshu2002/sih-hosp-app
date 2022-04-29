@@ -26,22 +26,22 @@ function Form(props){
       return new Promise(resolve=> setTimeout(resolve,ms));
     }
     async function change(){
-    if(currentPage===3){
+    if(currentPage===1){
       await sleep(300);
-      setbutton(<Third transform={"animate-fadeIn"}/>);
-      setthirdbg("bg-[#F7AA00]");
-
+      current&&
+      setbutton(<First transform={"animate-fadeIn"}/>);
+      setsecondbg("bg-secondary_text")
+      
     } else if(currentPage===2){
       await sleep(300);
       setbutton(<Second transform={"animate-fadeIn"}/>);
       setsecondbg("bg-[#F7AA00]");
       setthirdbg("bg-secondary_text");
-    }else if(currentPage===1){
+    }else if(currentPage===3){
       await sleep(300);
-      current&&
-      setbutton(<First transform={"animate-fadeIn"}/>);
-      setthirdbg("bg-secondary_text");
-      setsecondbg("bg-secondary_text");
+      setbutton(<Third transform={"animate-fadeIn"}/>);
+      setthirdbg("bg-[#F7AA00]");
+      setsecondbg("bg-[#F7AA00]");
     }
     }change()
   },[currentPage,current])
