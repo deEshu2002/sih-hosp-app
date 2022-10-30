@@ -20,7 +20,7 @@ const JoinNav = (props) => {
             <ul className="flex flex-row space-x-8 mt-0 text-sm font-medium">
               <li>
                 <Link to="/features"
-                  className="block pt-3 px-1 text-primary_text/75  no-underline hover:underline font-raleway "
+                  className="block pt-3 px-1 text-primary_text/75  no-underline hover:underline font-raleway"
                 >
                   Features
                 </Link>

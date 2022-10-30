@@ -12,6 +12,7 @@ import TAndC from './Components/FrontPage/TAndC';
 import PrivAndPol from './Components/FrontPage/PrivAndPol';
 import OperatorNav from './Components/OperatorScreen';
 import HospForm from "./Components/OperatorComponent/Hosp/HospForm";
+import ProtectedRoutes from "./Components/ProtectedRoutes";
 
 
 
@@ -26,7 +27,8 @@ function App() {
        <Route path="/contact" element={<Contacts/>}/>
        <Route path="/signIn" element={<SignIn/>}/>
        <Route path="/nodeSignIn" element={<NodeSignIn/>}/>
-       <Route path="/joinForm" element={<JoinForm/>}/>
+       {/* <Route path="/joinForm" element={<JoinForm/>}/> */}
+       <ProtectedRoutes path="/joinForm" component={<JoinForm/>}/>
        <Route path="/:uniqueID/dashboard" element={<OperatorNav/>}/>
        <Route path="/:uniqueID/:NodeId/form" element={<HospForm/>}/>
        <Route path="/help" element={<Help/>}/>

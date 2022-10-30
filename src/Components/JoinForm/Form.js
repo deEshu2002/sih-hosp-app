@@ -71,15 +71,15 @@ function Form(props){
           </div>
 
           </div>
-          <div className="flex flex-row">
-            <div className="text-primary_text text-center py-3 text-base font-bold font-raleway  lg:ml-[380px]">
+          <div className="flex flex-row justify-center gap-40 w-full">
+            <div className="text-primary_text text-center py-3 text-base font-bold font-raleway  ">
               Account Setup
             </div>
-            <div className="text-primary_text text-center py-3 text-base font-bold font-raleway ml-[158px]">
+            <div className="text-primary_text text-center py-3 text-base font-bold font-raleway mr-4">
               Details
             </div>
           
-            <div className="text-primary_text text-center py-3 text-base font-bold font-raleway ml-[168px]">
+            <div className="text-primary_text text-center py-3 text-base font-bold font-raleway">
               Detail Proof
             </div>
           </div>
