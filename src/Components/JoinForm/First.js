@@ -1,11 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import axios from "axios";
-import { useDispatch } from 'react-redux';
-import { goForward } from '../Action';
-
-
+import { useDispatch } from "react-redux";
+import { goForward } from "../Action";
 
 function First(props) {
+  const [email, setemail] = useState("");
+  const [password, setPassword] = useState("");
+  const [register, setRegister] = useState(false);
 
   const configuration = {
     method: "post",
@@ -14,15 +15,17 @@ function First(props) {
       email,
       password,
     },
-  }
-
-  const [email, setemail] = useState("");
-  const [password, setPassword] = useState("");
-  const [register, setRegister] = useState(false);
+  };
 
   function handleSubmit(e) {
     e.preventDefault();
-    axios(configuration).then((result) => { setRegister(true) }).catch((error) => { error = new Error(); })
+    axios(configuration)
+      .then((result) => {
+        setRegister(true);
+      })
+      .catch((error) => {
+        error = new Error();
+      });
     alert("Registered");
   }
 
@@ -61,8 +64,13 @@ function First(props) {
             />
           </div>
           <div className="flex justify-center pt-2 w-full">
-            <button className="w-fit bg-primary_text py-1 px-6 text-white font-extrabold text-xl font-mulish rounded-md shadow-md"
-              onClick={() => { dispatch(goForward()); seteffect("animate-fadeOut"); handleSubmit(); }}
+            <button
+              className="w-fit bg-primary_text py-1 px-6 text-white font-extrabold text-xl font-mulish rounded-md shadow-md"
+              onClick={() => {
+                dispatch(goForward());
+                seteffect("animate-fadeOut");
+                handleSubmit();
+              }}
             >
               Next
             </button>
@@ -70,7 +78,7 @@ function First(props) {
         </form>
       </div>
     </div>
-  )
+  );
 }
 
 export default First;

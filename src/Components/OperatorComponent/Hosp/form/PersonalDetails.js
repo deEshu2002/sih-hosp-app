@@ -1,8 +1,6 @@
 import React from "react";
 
 export default function PersonDetail() {
-  
-  
   return (
     <div>
       <div className="grid xl:grid-cols-2 xl:gap-6 mt-2">
@@ -13,12 +11,8 @@ export default function PersonDetail() {
             id="floating_first_name"
             className="form-input-effect peer"
             required=""
-            
           />
-          <label
-            htmlFor="floating_first_name"
-            className="form-label-effect"
-          >
+          <label htmlFor="floating_first_name" className="form-label-effect">
             First name
           </label>
         </div>
@@ -29,12 +23,8 @@ export default function PersonDetail() {
             id="floating_last_name"
             className="form-input-effect peer"
             required=""
-
           />
-          <label
-            htmlFor="floating_last_name"
-            className="form-label-effect"
-          >
+          <label htmlFor="floating_last_name" className="form-label-effect">
             Last name
           </label>
         </div>
@@ -49,10 +39,7 @@ export default function PersonDetail() {
             className="form-input-effect peer"
             required
           />
-          <label
-            htmlFor="floating_phone"
-            className="form-label-effect"
-          >
+          <label htmlFor="floating_phone" className="form-label-effect">
             Contact number
           </label>
         </div>
@@ -64,10 +51,7 @@ export default function PersonDetail() {
             className="form-input-effect peer"
             required
           />
-          <label
-            htmlFor="floating_age"
-            className="form-label-effect"
-          >
+          <label htmlFor="floating_age" className="form-label-effect">
             Age
           </label>
         </div>
@@ -147,10 +131,7 @@ export default function PersonDetail() {
             className="form-input-effect peer"
             required
           />
-          <label
-            htmlFor="floating_admit_date"
-            className="form-label-effect"
-          >
+          <label htmlFor="floating_admit_date" className="form-label-effect">
             Admit Date
           </label>
         </div>
@@ -163,10 +144,7 @@ export default function PersonDetail() {
             placeholder=" "
             required
           />
-          <label
-            htmlFor="floating_admit_time"
-            className="form-label-effect"
-          >
+          <label htmlFor="floating_admit_time" className="form-label-effect">
             Admit Time
           </label>
         </div>
@@ -180,10 +158,7 @@ export default function PersonDetail() {
           placeholder=" "
           required
         />
-        <label
-          htmlFor="floating_PatientID"
-          className="form-label-effect"
-        >
+        <label htmlFor="floating_PatientID" className="form-label-effect">
           Patient ID
         </label>
       </div>
